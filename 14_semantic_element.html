@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  margin: 4px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: rgb(100, 200, 255);
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+  
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a{
+ text-decoration:none;
+}
+
+a:hover{
+    opacity:0.5;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+footer {
+  background-color: rgb(100, 200, 255);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>การสร้างเค้าโครงเว็บไซต์ด้วย Semantic Element</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">link 1</a></li>
+      <li><a href="#">link 2</a></li>
+      <li><a href="#">link 3</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Semantic Element</h1>
+    <p>เนื้อหาที่ 1</p>
+    <p>เนื้อหาที่ 2</p>
+    <p>เนื้อหาที่ 3</p>
+    <p>เนื้อหาที่ 4</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
